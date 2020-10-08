@@ -333,6 +333,10 @@ conhecimento-img-wrapper img {
 
 /*----- PROJETOS -----*/
 
+.sessao-projetos {
+    background-color: rgba(245, 238, 238, 0.788);
+}
+
 .projetos {
     display: flex;
     justify-content: space-evenly;
@@ -482,7 +486,7 @@ conhecimento-img-wrapper img {
 
 .input-group textarea {
     max-width: 27rem;
-    max-height: 10rem;
+    max-height: 6rem;
     min-width: 20rem;
     min-height: 1.5rem;
 }
@@ -506,6 +510,7 @@ conhecimento-img-wrapper img {
 }
 
 .btn-submmit {
+    text-transform: uppercase;
     height: 2rem;
     width: 20rem;
     background-color: rgb(153, 83, 218);
@@ -515,4 +520,67 @@ conhecimento-img-wrapper img {
     color: rgb(255, 255, 255);
     box-shadow: 3px 3px 6px rgb(172, 169, 169);
     text-shadow: 0px 1px 5px rgb(15, 15, 15);
+}
+
+
+/* -------- ORÇAMENTO -------------*/
+
+.sessao-orcamento {
+    width: 100%;
+    height: 90vh;
+    background-color: #272727;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.orcmento-wrapper {
+    width: 60%;
+    height: 80%;
+    background-color: #eee;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, .6);
+    position: relative;
+}
+
+.sessao-orcamento h1 {
+    position: absolute;
+    background-color: #272727;
+    left: 9rem;
+    top: -4rem;
+    text-align: center;
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    color: white;
+    box-shadow: 1rem 1rem 1.5rem rgb(10, 10, 10);
+    border: solid 1px;
+    padding: 1rem 10rem;
+}
+
+.sessao-orcamento form {
+    margin: 4rem;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
+    row-gap: 1.4rem;
+}
+
+.sessao-orcamento label {
+    font-family: var(--font-secundary);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sessao-orcamento input[type="number"] {
+    font-family: var(--font-secundary);
+    font-weight: bold;
+    width: 4rem;
+    font-size: 2rem;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+.btn-orcamento {
+    grid-column: 2;
 }
