@@ -329,3 +329,85 @@ conhecimento-img-wrapper img {
     object-fit: cover;
     width: 100%;
 }
+
+
+/*----- PROJETOS -----*/
+
+.projetos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 18rem;
+    height: 25rem;
+    position: relative;
+}
+
+.card-img-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #262626;
+}
+
+.card-img-wrapper img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: opacity .3s;
+}
+
+.card:hover .card-img-wrapper img {
+    opacity: .5;
+}
+
+.card-info {
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+    padding: 2rem;
+    text-shadow: 0 .1rem .3rem rgba(0, 0, 0, .4);
+    transition: all .7s;
+}
+
+.card-info h2 {
+    font-family: var(--font-secundary);
+    font-size: 2rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-shadow: .1rem .1rem .1rem rgb(19, 18, 18);
+}
+
+.card-info h3 {
+    font-family: var(--font-secundary);
+    font-weight: 600;
+    color: rgb(228, 22, 22);
+    text-shadow: .1rem .1rem .1rem rgb(19, 18, 18);
+}
+
+.card-info p {
+    font-family: var(--font-secundary);
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
+
+.card-info button {
+    margin-top: .7rem;
+    height: 2.5rem;
+    width: 8rem;
+    background-color: rgb(153, 83, 218);
+    font-family: var(--font-action);
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    border: none;
+    box-shadow: .1rem .1rem .1rem rgb(8, 8, 8);
+}
+
+.card:hover .card-info {
+    bottom: 2rem;
+    opacity: 1;
+    visibility: visible;
+}
