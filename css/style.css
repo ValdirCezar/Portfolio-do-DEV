@@ -526,6 +526,7 @@ conhecimento-img-wrapper img {
 /* -------- ORÇAMENTO -------------*/
 
 .sessao-orcamento {
+    padding-top: 6rem;
     width: 100%;
     height: 90vh;
     background-color: #272727;
@@ -583,4 +584,41 @@ conhecimento-img-wrapper img {
 
 .btn-orcamento {
     grid-column: 2;
+}
+
+
+/* -------- FOOTER -------------*/
+
+.footer {
+    width: 100%;
+    height: 5%;
+    background-color: #272727;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content p {
+    font-family: var(--font-secundary);
+    color: #fff;
+    font: 1rem;
+    padding-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.social-list a {
+    margin: 0 2rem;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.social-list ul {
+    display: flex;
 }
